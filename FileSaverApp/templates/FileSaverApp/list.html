@@ -1,0 +1,9 @@
+{% if documents_list %}
+    <ul>
+    {% for doc in documents_list %}
+        <li><a href="/FileSaverApp/{{ doc.id }}/">{{ doc.file_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No documents available.</p>
+{% endif %}
