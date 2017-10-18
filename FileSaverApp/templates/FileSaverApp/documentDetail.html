@@ -1,6 +1,6 @@
 <h1>{{ document.file_name }}</h1>
 <ul>
-<!--{% for choice in document.choice_set.all %}-->
-    <!--<li>{{ choice.choice_text }}</li>-->
-<!--{% endfor %}-->
+{% for keyword in document.keyword_set.all %}
+    <li>{{ keyword.keyword }}</li>
+{% endfor %}
 </ul>

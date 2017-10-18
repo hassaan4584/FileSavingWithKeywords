@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+
+    <form id="searchform" action="{% url 'FileSaverApp:search' %}" method="get" accept-charset="utf-8">
+      <button class="searchbutton" type="submit">
+        <i class="fa fa-search"></i>
+          Search!
+      </button>
+      <input class="searchfield" id="searchbox" name="q" type="text" placeholder="Search">
+    </form>
+
+
+</body>
+</html>
+
+
+{% if documents_list %}
+
+<ul>
+    <li><a href="{% url 'FileSaverApp:detail' 1 %}">{{ file1 }}</a></li>
+
+    {% for doc in documents_list %}
+        <li><a href="{% url 'FileSaverApp:detail' doc.id %}">{{ doc.file_name }}</a></li>
+    {% endfor %}
+    <!--{% for file in files %}-->
+    <!--<input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />-->
+    <!--<label for="choice{{ forloop.counter }}">{{ file.file_name }}</label><br />-->
+{% endfor %}
+</ul>
+
+
+
+
+{% endif %}
+
+
+
+
