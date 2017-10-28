@@ -4,6 +4,7 @@ from django.db import models
 
 class Document(models.Model):
     file_name = models.CharField(max_length=200)
+    document_type = models.CharField(max_length=100, default='General')
     pub_date = models.DateTimeField('date published')
     file = models.FileField(upload_to="pdfs/")
 

@@ -36,31 +36,20 @@ def documentDetail(request, document_id):
 
 def searchDocuments(request):
 
-    searchText = request.GET['q']
+    searchText = request.GET.get('q')
+    if searchText is None:
+        return render(request, 'FileSaverApp/search.html')
+
     searchResults = Document.objects.filter(file_name__icontains=searchText)
+
+    searchList = list(searchResults)
 
     keywordSearchResults = Keyword.objects.filter(keyword__icontains=searchText)
     for key in keywordSearchResults:
         if key.document not in searchResults:
-            searchResults.append(key.document)
+            searchList.append(key.document)
 
 
-    return render(request, 'FileSaverApp/search.html', {'documents_list':searchResults})
 
-
-class FileSearchListView(generic.ListView):
-    def get_queryset(self):
-        result = super(generic.ListView, self).get_queryset()
-
-        query = self.request.GET.get('q')
-        if query:
-            query_list = query.split()
-            result = result.filter(
-                reduce(operator.and_,
-                       (Q(title__icontains=q) for q in query_list)) |
-                reduce(operator.and_,
-                       (Q(content__icontains=q) for q in query_list))
-            )
-
-        return result
+    return render(request, 'FileSaverApp/search.html', {'documents_list':searchList})
 
