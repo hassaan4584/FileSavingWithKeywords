@@ -38,9 +38,12 @@ def searchDocuments(request):
 
     searchText = request.GET['q']
     searchResults = Document.objects.filter(file_name__icontains=searchText)
-    # allDocs = Document.objects.all()
-    # for doc in allDocs:
-    #     searchResults += doc.keyword_set.filter(keyword__icontains=searchText)
+
+    keywordSearchResults = Keyword.objects.filter(keyword__icontains=searchText)
+    for key in keywordSearchResults:
+        if key.document not in searchResults:
+            searchResults.append(key.document)
+
 
     return render(request, 'FileSaverApp/search.html', {'documents_list':searchResults})
 
