@@ -24,7 +24,7 @@
 <ul>
 
     {% for doc in documents_list %}
-        <li> {{ forloop.counter }} <a href="{% url 'FileSaverApp:detail' doc.id %}">{{ doc.file_name }}</a>
+        <li> {{ forloop.counter }} <a href="{% url 'FileSaverApp:detail' doc.id %}">{{ doc.document_name }}</a>
         </li>
     {% endfor %}
     <!--{% for file in files %}-->

@@ -28,7 +28,7 @@ def listFiles(request):
     # output = ', '.join([doc.file_name for doc in document_list])
     # return HttpResponse(output)
 
-    documents_list = Document.objects.order_by('-file_name')[:5]
+    documents_list = Document.objects.order_by('-document_name')
     context = {
         'documents_list': documents_list,
     }
@@ -37,23 +37,8 @@ def listFiles(request):
 
 def documentDetail(request, document_id):
     document = get_object_or_404(Document, pk=document_id)
-    document_text = 'abc'
+    document_text = document.document_text
 
-    # load the example image and convert it to grayscale
-    image = cv2.imread('Timings.png')
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-    # write the grayscale image to disk as a temporary file so we can
-    # apply OCR to it
-    filename = "{}.png".format(os.getpid())
-    cv2.imwrite(filename, gray)
-
-    # load the image as a PIL/Pillow image, apply OCR, and then delete
-    # the temporary file
-    text = pytesseract.image_to_string(Image.open(filename))
-    os.remove(filename)
-    print(text)
-    document_text = text
     return render(request, 'FileSaverApp/documentDetail.html', {'document': document,
                                                                 'text': document_text })
 
@@ -77,3 +62,27 @@ def searchDocuments(request):
 
     return render(request, 'FileSaverApp/search.html', {'documents_list':searchList})
 
+
+def extractText(request, document_id):
+    document = get_object_or_404(Document, pk=document_id)
+    document_text = 'abc'
+
+    # load the example image and convert it to grayscale
+    image = cv2.imread('media/' + document.file.__str__())
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+    # write the grayscale image to disk as a temporary file so we can
+    # apply OCR to it
+    filename = "{}.png".format(os.getpid())
+    cv2.imwrite(filename, gray)
+
+    # load the image as a PIL/Pillow image, apply OCR, and then delete
+    # the temporary file
+    text = pytesseract.image_to_string(Image.open(filename))
+    os.remove(filename)
+    print(text)
+    document_text = text
+    document.file_text = text
+    document.save()
+    return render(request, 'FileSaverApp/documentDetail.html', {'document': document,
+                                                                'text': document_text })

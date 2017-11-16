@@ -1,7 +1,39 @@
-<h1>{{ document.file_name }}</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+</head>
+<body>
+<h1> {{ document.document_name }}</h1>
+<h3> Keywords :</h3>
+
 <ul>
 {% for keyword in document.keyword_set.all %}
     <li>{{ keyword.keyword }}</li>
-    {{text}}
 {% endfor %}
 </ul>
+
+    <br>
+<h4> Document Path:</h4>
+{{ document.file }}
+    <br>
+    <br>
+<h4> Document Content:</h4>
+    <form id="searchform" action="{% url 'FileSaverApp:extractText' document.id %}" method="get" accept-charset="utf-8">
+      <button class="searchbutton" type="submit">
+        <i class="fa fa-search"></i>
+          Reload Document Content!
+      </button>
+    </form>
+    <br>
+    {{text}}
+
+
+</body>
+</html>
+
+
+
+

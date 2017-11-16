@@ -8,6 +8,7 @@ urlpatterns = [
     # url(r'^(?P<document_id>[0-9]+)list/$', views.listFiles, name='list'), # http://127.0.0.1:8000/FileSaverApp/1list/
     url(r'^list/$', views.listFiles, name='list'),
     url(r'^search/$', views.searchDocuments, name='search'),
+    url(r'^extractText/(?P<document_id>[0-9]+)$', views.extractText, name='extractText'),
     url(r'^(?P<document_id>[0-9]+)/$', views.documentDetail, name='detail'),
 
 ]
