@@ -24,25 +24,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/tinker/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="64" lean-forward="false" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+            <state relative-caret-position="284">
+              <caret line="67" column="112" lean-forward="false" selection-start-line="67" selection-start-column="112" selection-end-line="67" selection-end-column="112" />
               <folding>
                 <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1514186535000" expanded="false" signature="14182:18550" ph="..." />
-                <marker date="1514186535000" expanded="false" signature="18577:20926" ph="..." />
-                <marker date="1514186535000" expanded="false" signature="20946:21565" ph="..." />
-                <marker date="1514186535000" expanded="false" signature="21520:21528" ph="..." />
-                <marker date="1514186535000" expanded="false" signature="21579:23567" ph="..." />
-                <marker date="1514186535000" expanded="false" signature="21843:21849" ph="©" />
+                <marker date="1514188395000" expanded="false" signature="14213:18581" ph="..." />
+                <marker date="1514188395000" expanded="false" signature="18608:20957" ph="..." />
+                <marker date="1514188395000" expanded="false" signature="21551:21559" ph="..." />
+                <marker date="1514188395000" expanded="false" signature="21610:23598" ph="..." />
+                <marker date="1514188395000" expanded="false" signature="21874:21880" ph="©" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FileSearchingSite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1121">
@@ -106,8 +105,8 @@
         <option value="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/documentDetail.html" />
         <option value="$PROJECT_DIR$/FileSaverApp/models.py" />
         <option value="$PROJECT_DIR$/FileSaverApp/views.py" />
-        <option value="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/tinker/index.html" />
         <option value="$PROJECT_DIR$/FileSearchingSite/settings.py" />
+        <option value="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/tinker/index.html" />
       </list>
     </option>
   </component>
@@ -710,27 +709,26 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/tinker/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="64" lean-forward="false" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
-          <folding>
-            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1514186535000" expanded="false" signature="14182:18550" ph="..." />
-            <marker date="1514186535000" expanded="false" signature="18577:20926" ph="..." />
-            <marker date="1514186535000" expanded="false" signature="20946:21565" ph="..." />
-            <marker date="1514186535000" expanded="false" signature="21520:21528" ph="..." />
-            <marker date="1514186535000" expanded="false" signature="21579:23567" ph="..." />
-            <marker date="1514186535000" expanded="false" signature="21843:21849" ph="©" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FileSearchingSite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1121">
           <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/tinker/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="67" column="112" lean-forward="false" selection-start-line="67" selection-start-column="112" selection-end-line="67" selection-end-column="112" />
+          <folding>
+            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1514188395000" expanded="false" signature="14213:18581" ph="..." />
+            <marker date="1514188395000" expanded="false" signature="18608:20957" ph="..." />
+            <marker date="1514188395000" expanded="false" signature="21551:21559" ph="..." />
+            <marker date="1514188395000" expanded="false" signature="21610:23598" ph="..." />
+            <marker date="1514188395000" expanded="false" signature="21874:21880" ph="©" />
+          </folding>
         </state>
       </provider>
     </entry>
