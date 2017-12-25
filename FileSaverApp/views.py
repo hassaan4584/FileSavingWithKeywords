@@ -17,7 +17,8 @@ import os
 
 
 def index(request):
-    return HttpResponse("Hello, You are at start of the Document Management System.")
+    # return HttpResponse("Hello, You are at start of the Document Management System.")
+    return render(request, 'FileSaverApp/tinker/index.html')
 
 
 def listFiles(request):
