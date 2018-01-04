@@ -26,7 +26,7 @@ def listFiles(request):
     # return render(request, 'FileSaverApp/list.html', {'document': document})
 
     # document_list = Document.objects.order_by('-pub_date')[:5]
-    # output = ', '.join([doc.file_name for doc in document_list])
+    # output = ', '.join([doc.document_name for doc in document_list])
     # return HttpResponse(output)
 
     documents_list = Document.objects.order_by('-document_name')
@@ -50,7 +50,7 @@ def searchDocuments(request):
     if searchText is None:
         return render(request, 'FileSaverApp/search.html')
 
-    searchResults = Document.objects.filter(file_name__icontains=searchText)
+    searchResults = Document.objects.filter(document_name__icontains=searchText)
 
     searchList = list(searchResults)
 
