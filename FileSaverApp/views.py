@@ -85,5 +85,61 @@ def extractText(request, document_id):
     document_text = text
     document.file_text = text
     document.save()
+
+
+    addressee = findAddressee(text)
+    subject = findSubjectLine(text)
+
+
+
     return render(request, 'FileSaverApp/documentDetail.html', {'document': document,
-                                                                'text': document_text })
+                                                                'text': document_text,
+                                                                'addressee': addressee,
+                                                                'subjectLine': subject})
+
+
+
+# Helper Functions
+
+def findAddressee(text):
+    # find name of the person/team to which the letter is directed to
+
+    addressee = "Unable to find the name of the person this document us addressed to."
+    startIndex = text.lower().find("dear ")
+    offset = 5
+    if startIndex == -1:
+        startIndex = text.lower().find("dear")
+        offset = 4
+    if startIndex != -1 :
+        endIndex = text.find(",\n")
+        if endIndex == -1:
+            endIndex = text.find("\n")
+
+        if endIndex != -1 :
+            addressee = "This document is addressed to ";
+            addressee += text[startIndex+offset:endIndex].upper();
+
+    return addressee
+
+
+    # find subject of the document
+def findSubjectLine(text):
+
+    subjectLine = "Unable to find subject line in the document"
+    possibleSubjectHeadings = ["subject:", "subjectline:", "subject line:"]
+
+    startIndex = -1
+    for i in range(0, possibleSubjectHeadings.__len__()):
+        startIndex = text.lower().find(possibleSubjectHeadings[i])
+        offset = possibleSubjectHeadings[i].__len__()
+        if startIndex != -1:
+            startIndex += offset
+            endIndex = text.find('\n')
+            if endIndex > startIndex:
+                subjectLine = text[startIndex:endIndex]
+                return subjectLine
+
+        startIndex = -1;
+
+
+    return subjectLine

@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9ce76e3e-799f-482f-a02c-b514885a91e3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileSaverApp/static/tinker/css/detailsPage.css" afterPath="$PROJECT_DIR$/FileSaverApp/static/tinker/css/detailsPage.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/documentDetail.html" afterPath="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/documentDetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/list.html" afterPath="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/search.html" afterPath="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/tinker/index.html" afterPath="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/tinker/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileSaverApp/views.py" afterPath="$PROJECT_DIR$/FileSaverApp/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,10 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FileSaverApp/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/tinker/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2010">
+            <state relative-caret-position="0">
               <caret line="134" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
               <folding>
                 <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -53,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/search.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2535">
-              <caret line="204" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
+              <caret line="204" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
               <folding>
                 <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -64,8 +71,8 @@
       <file leaf-file-name="documentDetail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/documentDetail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="72" column="19" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+            <state relative-caret-position="1155">
+              <caret line="77" column="32" lean-forward="false" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
               <folding>
                 <element signature="n#script#4;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -97,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/FileSaverApp/static/tinker/css/bootstrap-theme.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="79">
-              <caret line="92" column="28" lean-forward="true" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+              <caret line="92" column="28" lean-forward="false" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -106,18 +113,8 @@
       <file leaf-file-name="detailsPage.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FileSaverApp/static/tinker/css/detailsPage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FileSaverApp/static/tinker/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="2588" column="1" lean-forward="true" selection-start-line="2584" selection-start-column="0" selection-end-line="2588" selection-end-column="1" />
+            <state relative-caret-position="135">
+              <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -126,8 +123,8 @@
       <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="77" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+            <state relative-caret-position="56">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -157,11 +154,11 @@
         <option value="$PROJECT_DIR$/FileSaverApp/urls.py" />
         <option value="$PROJECT_DIR$/FileSaverApp/models.py" />
         <option value="$PROJECT_DIR$/FileSearchingSite/settings.py" />
-        <option value="$PROJECT_DIR$/FileSaverApp/views.py" />
         <option value="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/list.html" />
         <option value="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/tinker/index.html" />
         <option value="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/search.html" />
         <option value="$PROJECT_DIR$/FileSaverApp/static/tinker/css/detailsPage.css" />
+        <option value="$PROJECT_DIR$/FileSaverApp/views.py" />
         <option value="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/documentDetail.html" />
       </list>
     </option>
@@ -343,11 +340,11 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49095023" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5144158" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39908952" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39908952" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -369,9 +366,13 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="19" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="possibleSubjectHeadings[i]" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/list.html">
@@ -679,16 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FileSaverApp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="52" column="52" lean-forward="false" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FileSaverApp/static/tinker/css/templatemo-style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -697,18 +688,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="77" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2535">
-          <caret line="204" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
+          <caret line="204" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
           <folding>
             <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -717,7 +700,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/tinker/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2010">
+        <state relative-caret-position="0">
           <caret line="134" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding>
             <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -749,7 +732,7 @@
     <entry file="file://$PROJECT_DIR$/FileSaverApp/static/tinker/css/bootstrap-theme.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
-          <caret line="92" column="28" lean-forward="true" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+          <caret line="92" column="28" lean-forward="false" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -757,23 +740,39 @@
     <entry file="file://$PROJECT_DIR$/FileSaverApp/static/tinker/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="2588" column="1" lean-forward="true" selection-start-line="2584" selection-start-column="0" selection-end-line="2588" selection-end-column="1" />
+          <caret line="2588" column="1" lean-forward="false" selection-start-line="2584" selection-start-column="0" selection-end-line="2588" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FileSaverApp/static/tinker/css/detailsPage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="135">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileSaverApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/documentDetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="72" column="19" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+        <state relative-caret-position="1155">
+          <caret line="77" column="32" lean-forward="false" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
           <folding>
             <element signature="n#script#4;n#html#0;n#!!top" expanded="false" />
           </folding>
