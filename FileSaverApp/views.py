@@ -86,11 +86,8 @@ def extractText(request, document_id):
     document.file_text = text
     document.save()
 
-
     addressee = findAddressee(text)
     subject = findSubjectLine(text)
-
-
 
     return render(request, 'FileSaverApp/documentDetail.html', {'document': document,
                                                                 'text': document_text,
@@ -122,8 +119,9 @@ def findAddressee(text):
     return addressee
 
 
-    # find subject of the document
+
 def findSubjectLine(text):
+    # find subject of the document
 
     subjectLine = "Unable to find subject line in the document"
     possibleSubjectHeadings = ["subject:", "subjectline:", "subject line:"]
