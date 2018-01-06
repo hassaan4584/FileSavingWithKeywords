@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ce76e3e-799f-482f-a02c-b514885a91e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileSaverApp/static/tinker/css/detailsPage.css" afterPath="$PROJECT_DIR$/FileSaverApp/static/tinker/css/detailsPage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/documentDetail.html" afterPath="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/documentDetail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/list.html" afterPath="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/search.html" afterPath="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/search.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/tinker/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3283">
+            <state relative-caret-position="-1713">
               <caret line="71" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding>
                 <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -68,12 +63,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="search.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="338">
+              <caret line="71" column="24" lean-forward="false" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+              <folding>
+                <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,8 +134,8 @@
         <option value="$PROJECT_DIR$/FileSaverApp/models.py" />
         <option value="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/list.html" />
         <option value="$PROJECT_DIR$/FileSaverApp/static/tinker/css/detailsPage.css" />
-        <option value="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/search.html" />
         <option value="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/documentDetail.html" />
+        <option value="$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/search.html" />
       </list>
     </option>
   </component>
@@ -379,7 +376,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -424,7 +423,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -469,7 +470,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -485,7 +488,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -559,7 +564,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -702,14 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/documentDetail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -720,7 +719,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/tinker/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3283">
+        <state relative-caret-position="-1713">
           <caret line="71" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
             <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -729,6 +728,16 @@
             <marker date="1515161088000" expanded="false" signature="21696:21704" ph="..." />
             <marker date="1515161088000" expanded="true" signature="21755:23743" ph="..." />
             <marker date="1515161088000" expanded="false" signature="22019:22025" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileSaverApp/templates/FileSaverApp/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="71" column="24" lean-forward="false" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+          <folding>
+            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

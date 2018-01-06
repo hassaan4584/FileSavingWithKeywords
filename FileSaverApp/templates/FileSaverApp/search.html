@@ -69,26 +69,16 @@
                     </form>
 
                     {% if documents_list %}
-                    <ul>
+                    <ul class="document-list">
                         {% for doc in documents_list %}
                             <li> {{ forloop.counter }} <a class="document-list" href="{% url 'FileSaverApp:detail' doc.id %}">{{ doc.document_name }}</a>
                             </li>
                         {% endfor %}
                     </ul>
                     {% endif %}
-                    <div class="primary-white-button">
-                        <a href="{% url 'FileSaverApp:list' %}" type="submit">View Documents</a>
-                    </div>
-
-
             </div>
         </div>
     </div>
-
-
-
-
-
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
