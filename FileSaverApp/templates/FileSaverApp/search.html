@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Search</title>
-       <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        {% load static %}
+    {% load static %}
 
-        <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/bootstrap.min.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/bootstrap-theme.min.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/fontAwesome.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/hero-slider.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/owl-carousel.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/templatemo-style.css' %}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/lightbox.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/bootstrap-theme.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/fontAwesome.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/hero-slider.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/owl-carousel.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/templatemo-style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/lightbox.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/detailsPage.css' %}" />
 
-        <script src="{% static "tinker/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" %}" ></script>
+    <script src="{% static "tinker/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" %}" ></script>
 </head>
+
 <body>
     <div class="header">
         <div class="container">
@@ -62,27 +64,21 @@
                     <form id="searchform" action="{% url 'FileSaverApp:search' %}" method="get" accept-charset="utf-8">
                       <input class="searchfield" id="searchbox" name="q" type="text" placeholder="Search">
                       <button type="submit">
-                          Search!
+                          Search
                       </button>
                     </form>
+
                     {% if documents_list %}
-
                     <ul>
-
                         {% for doc in documents_list %}
-                            <li> {{ forloop.counter }} <a href="{% url 'FileSaverApp:detail' doc.id %}">{{ doc.document_name }}</a>
+                            <li> {{ forloop.counter }} <a class="document-list" href="{% url 'FileSaverApp:detail' doc.id %}">{{ doc.document_name }}</a>
                             </li>
                         {% endfor %}
-                        <!--{% for file in files %}-->
-                        <!--<input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />-->
-                        <!--<label for="choice{{ forloop.counter }}">{{ file.document_name }}</label><br />-->
-                    {% endfor %}
                     </ul>
-
-
-
-
-{% endif %}
+                    {% endif %}
+                    <div class="primary-white-button">
+                        <a href="{% url 'FileSaverApp:list' %}" type="submit">View Documents</a>
+                    </div>
 
 
             </div>
@@ -91,68 +87,6 @@
 
 
 
-
-
-
-
-    <section id="about" class="page-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service-item">
-                        <div class="icon">
-                            <img src="{% static "tinker/img/service_icon_01.png" %}"alt="">
-                        </div>
-                        <h4>Smart Alerts Updated</h4>
-                        <div class="line-dec"></div>
-                        <p>Integer hendrerit vehicula mauris, sed pellentesque sem facilisis at. Aliquam vel arcu metus. Nam sem lectus, mattis non tellus et, tincidunt condimentum eros.</p>
-                        <div class="primary-blue-button">
-                            <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service-item">
-                        <div class="icon">
-                            <img src="{% static "tinker/img/service_icon_02.png" %}" alt="">
-                        </div>
-                        <h4>Lovely HTML5 Layout</h4>
-                        <div class="line-dec"></div>
-                        <p>Integer hendrerit vehicula mauris, sed pellentesque sem facilisis at. Aliquam vel arcu metus. Nam sem lectus, mattis non tellus et, tincidunt condimentum eros.</p>
-                        <div class="primary-blue-button">
-                            <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service-item">
-                        <div class="icon">
-                            <img src="{% static "tinker/img/service_icon_03.png" %}" alt="">
-                        </div>
-                        <h4>Always CSS Ready</h4>
-                        <div class="line-dec"></div>
-                        <p>Integer hendrerit vehicula mauris, sed pellentesque sem facilisis at. Aliquam vel arcu metus. Nam sem lectus, mattis non tellus et, tincidunt condimentum eros.</p>
-                        <div class="primary-blue-button">
-                            <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service-item">
-                        <div class="icon">
-                            <img src="{% static "tinker/img/service_icon_04.png" %}" alt="">
-                        </div>
-                        <h4>One-Click Install</h4>
-                        <div class="line-dec"></div>
-                        <p>Integer hendrerit vehicula mauris, sed pellentesque sem facilisis at. Aliquam vel arcu metus. Nam sem lectus, mattis non tellus et, tincidunt condimentum eros.</p>
-                        <div class="primary-blue-button">
-                            <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
@@ -170,18 +104,18 @@
     $(document).ready(function() {
         // navigation click actions
         $('.scroll-link').on('click', function(event){
-            event.preventDefault();
+            <!--event.preventDefault();-->
             var sectionID = $(this).attr("data-id");
             scrollToID('#' + sectionID, 750);
         });
         // scroll to top action
-        $('.scroll-top').on('click', function(event) {
-            event.preventDefault();
-            $('html, body').animate({scrollTop:0}, 'slow');
-        });
+        <!--$('.scroll-top').on('click', function(event) {-->
+            <!--&lt;!&ndash;event.preventDefault();&ndash;&gt;-->
+            <!--$('html, body').animate({scrollTop:0}, 'slow');-->
+        <!--});-->
         // mobile nav toggle
         $('#nav-toggle').on('click', function (event) {
-            event.preventDefault();
+            <!--event.preventDefault();-->
             $('#main-nav').toggleClass("open");
         });
     });
@@ -203,7 +137,7 @@
     }
     </script>
 
-</body>
+    </body>
 </html>
 
 

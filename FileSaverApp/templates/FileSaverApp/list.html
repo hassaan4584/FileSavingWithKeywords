@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -22,6 +21,7 @@
         <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/owl-carousel.css' %}" />
         <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/templatemo-style.css' %}" />
         <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/lightbox.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'tinker/css/detailsPage.css' %}" />
 
         <script src="{% static "tinker/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" %}" ></script>
 </head>
@@ -62,15 +62,17 @@
             <div class="text-content">
                 <h2>Document <span>Image</span> <em>Classification</em></h2>
 
-                {% if documents_list %}
-                    <ul>
-                    {% for doc in documents_list %}
-                        <a href="{% url 'FileSaverApp:detail' doc.id %}"><p>{{ doc.document_name }}</p></a>
-                    {% endfor %}
-                    </ul>
-                {% else %}
-                    <p>No documents available.</p>
-                {% endif %}
+                <div class="document-list">
+                    {% if documents_list %}
+                        <ul>
+                        {% for doc in documents_list %}
+                            <a class ="document-list" href="{% url 'FileSaverApp:detail' doc.id %}">{{ doc.document_name }}</a>
+                        {% endfor %}
+                        </ul>
+                    {% else %}
+                        No documents available.
+                    {% endif %}
+                </div>
 
             </div>
         </div>

@@ -5,7 +5,12 @@
   color: #ffffff;
 }
 
+.document-list {
+color: #ffffff
+}
+
 .document-text {
     white-space: pre;
     text-align: left;
 }
+
